@@ -10,13 +10,13 @@ import Image from 'next/image';
 const Main = () => {
   return (
     <div style={{ display: 'flex', justifyContent: "center", flexDirection: "column", alignItems: 'center', position: 'relative' }}>
-      <Box bg={theme.colors.main.primary} w='100%' p={4} color='white' h="300px" display="flex" flexDirection="column"
+      <Box bg={theme.colors.main.primary} w='100%' p={4} color='white' h="42vh" display="flex" flexDirection="column"
         alignItems="center" pt="12"    >
         <Heading mb="3">{PriceHeading}</Heading>
         <Text fontSize='md'>{PriceText}</Text>
 
       </Box>
-      <Box position="absolute" top="44" w="75%" borderRadius='lg' display="flex" h="295px" shadow="lg">
+      <Box w="75%" borderRadius='lg' display="flex" h="285px" shadow="lg" mt="-32">
         <Box flex={2} bg={theme.colors.main.secondary} roundedLeft="lg" display="flex" flexDirection="column" justifyContent="center" alignItems="center" >
           <Heading>{Premium_Pro}</Heading>
           <Heading as='h3' size='3xl' mt={2}>{Price}</Heading>
@@ -38,7 +38,7 @@ const Main = () => {
           }
         </Box>
       </Box>
-      <Box position="absolute" top="96" w="70%" display="flex" mt="32">
+      <Box w="70%" display="flex" mt="12">
         <HStack spacing='50px'>
           {
             subscriptions.map((property, index) => (
