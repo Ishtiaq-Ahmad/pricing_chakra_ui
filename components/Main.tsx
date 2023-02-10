@@ -42,11 +42,9 @@ const Main = () => {
         {/* <HStack spacing={{ base: 'none', md: '50px' }} bg="gray.400" w={{ base: '90%', md: '70%' }} display="flex" flexDirection={{ base: 'column', md: 'row' }} mt="12"> */}
         {
           subscriptions.map((property, index) => (
-
-
-            <Box key={index} display="flex" alignItems="center" justifyContent="flex-start" mb="8">
+            <Box key={index} display="flex" alignItems="center" justifyContent="flex-start" mb="8" ml={{ base: 'none', md: "22" }}>
               {property.icon}
-              <Text as='b' fontSize='lg' ml={{ base: "4", md: "8" }}>{property.name}</Text>
+              <Text as='b' fontSize='lg' ml={{ base: "4", md: "6" }}>{property.name}</Text>
             </Box>
           ))
         }
