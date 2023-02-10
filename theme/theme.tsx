@@ -1,7 +1,7 @@
 import { extendTheme } from '@chakra-ui/react';
 
 interface Colors {
-    main:{
+    main: {
         primary: string;
         secondary: string;
     }
