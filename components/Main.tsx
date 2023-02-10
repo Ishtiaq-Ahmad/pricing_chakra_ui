@@ -12,7 +12,7 @@ const Main = () => {
     <div style={{ display: 'flex', justifyContent: "center", flexDirection: "column", alignItems: 'center', position: 'relative' }}>
       <Box bg={theme.colors.main.primary} w='100%' p={4} color='white' h={{ base: '45vh', md: '45vh' }} display="flex" flexDirection="column"
         alignItems="center" pt="12" mb="8" justifyContent='flex-start'  >
-        <Heading as='h3' size={{ base: "xl", md: "xl", lg: "2xl" }} mb="3">{PriceHeading}</Heading>
+        <Heading as='h3' size={{ base: "xl", md: "xl", lg: "2xl" }} mb="4">{PriceHeading}</Heading>
         <Text fontSize={{ base: "lg", md: "xl" }}>{PriceText}</Text>
 
       </Box>
